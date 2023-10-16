@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">AmbiciosoDocIRS</string>
+    <string name="action_settings">Configuración</string>
+    <!-- TOOLBAR DIALOGS-->
+    <string name="menuFaqTitle">INSTRUCCIONES DEL JUEGO</string>
+    <string name="menuLogInOutTitle">SESIÓN DE FACEBOOK</string>
+    <string name="aliasBoxTitle">¿COMO TE CONOCERÁN?</string>
+    <string name="aliasChangeBoxTitle">CAMBIAR EL ALIAS REGISTRADO</string>
+    <string name="tokenBoxTitle">TOKEN COMPARTIDO</string>
+    <string name="titleDialogValidateTokenPlay">JUEGA CON UN AMIGO</string>
+    <string name="btnStrSendTokenForPlay">ENVIAR TOKEN</string>
+    <string name="btnStrGotTokenForPlay">INGRESAR TOKEN</string>
+    <!-- MAIN ACTIVITY -->
+    <string name="btnTextSinglePlayer">UN JUGADOR</string>
+    <string name="btnTextMultiPlayer">MULTIPLAYER</string>
+    <string name="btnTextFacebookSignIn">INVITAR AMIGO</string>
+    <string name="aliasInputLabel">Ingresa un alias de jugador...</string>
+    <string name="tokenInputLabel">Ingresa el token compartido para juegar...</string>
+    <!-- BOTONES -->
+    <string name="btnOk">OK</string>
+    <string name="btnCancel">Cancelar</string>
+    <!-- FACEBOOK -->
+    <string name="facebook_app_id">1669503126628510</string>
+    <string name="action_login_facebook">Log In</string>
+    <string name="action_logout_facebook">Log Out</string>
+    <string name="facebookSignInSucceed">Se inicio correctamente la sesión.</string>
+    <string name="facebookDataRecovered">Recuperamos la data de facebook sin que iniciaras sesión nuevamente... Por favor abre nuevamente los comentarios.</string>
+    <string name="facebookRecoverDataSingle">Recuperando los datos...</string>
+
+
+    <string name="menuShareInviteTitle">Compartir o Invitar</string>
+    <!--DATA API-->
+    <string name="noCity">-</string>
+    <string name="noCountry">Internacional</string>
+    <string name="noUserName">sinnombre</string>
+    <string name="noBirthday">Sin fecha de cumpleaños</string>
+    <string name="noGender">Indefinido</string>
+    <string name="noEmail">sincorreo</string>
+    <!-- FACEBOOK ERRORES -->
+    <string name="facebookGralError">Ocurrió un error al recuperar los datos de facebook. Te pedimos disculpas, se verificará lo ocurrido.</string>
+    <string name="facebookCommentError">Ocurrió un error al enviar el comentario. Te pedimos disculpas, se verificará lo ocurrido.</string>
+    <string name="facebookCancelSession">Se ha cancelado el inicio de sesión de facebook.</string>
+    <string name="facebookErrorSession">Lo sentimos, ha ocurrido un error al iniciar sesión de facebook.</string>
+    <!-- ADMOB -->
+    <string name="adbanner">ca-app-pub-6017267251437976/9929367249</string>
+    <string name="adintersticial">ca-app-pub-6017267251437976/3882833649</string>
+    <!--ERRORES-->
+    <string name="errorHomeCheck">¡Hola!, debes aceptar los términos y condiciones para continuar con la búsqueda...</string>
+    <string name="errorSinResultados">NO SE ENCOTRARON RESULTADOS EN LA BÚSQUEDA</string>
+    <string name="errorSinConexion">NO FUE POSIBLE CONECTARNOS AL SERVIDOR, POR FAVOR INTENTALO MÁS TARDE.</string>
+    <string name="errorGral">Ocurrió un error: </string>
+    <string name="errorGral2">¡Ha ocurrido un error!, lo sentimos.</string>
+    <string name="errorNoInternet">No es posible continuar sin conexión a internet.</string>
+    <string name="errorInputSearchChars">Carácteres invalidos, por favor ingresa solo letras o números.</string>
+    <!-- COMPARTIR TOKEN CON AMIGO -->
+    <string name="shareTitle">Ambicioso DocIrs</string>
+    <string name="shareContentGameText">" te invita a ¡jugar Ambicioso!, ingresa "</string>
+    <string name="shareContentPlayText">" te invita a ¡jugar Ambicioso!, ingresa en la opción del menu (estrella) este token "</string>
+    <string name="shareContentText2">" para jugar un duelo. Descarga la aplicación desde el siguiente link: https://play.google.com/store/apps/details?id=com.javadoh.plantasmedicinalesnaturales "</string>
+    <!-- REGLAS INSTRUCCIONES -->
+    <string name="instruccionesA">"<b>El Ambicioso</b> \n <b>Juego de Cartas DocIRS© 2016Apps Móvil </b> \n <b>27/11/2016</b> \n \n El Ambicioso es un juego de cartas donde el apostador competirá contra otro jugador. Es decir,  el juego se desarrolla con al menos dos jugadores.\n El juego consiste en que los jugadores piden combinaciones de cartas en forma alterna, donde cada carta tiene un valor específico, según su número.\n Por ejemplo, todas las cartas de 1 a 10 tienen un valor basado en el número que aparece en la propia carta. Es decir, que un 5 de corazones tiene un valor de 5 y un 9 de pique tiene un valor de 9. Por tanto, la pinta de la carta no tiene influencia en su valor.\n Eso quiere decir que un 7 de diamantes y un 7 de corazones tienen el mismo valor de 7. Solamente las Cartas de Corte, como el Jaco, la Reina y el Rey son cartas que anulan por completo los puntos acumulados en cada ronda. "</string>
+    <string name="instruccionesB">"Por tanto, todas las cartas de la corte: jotas, reinas y reyes del mazo de naipes que se utilizan en El Ambicioso tienen un valor de 0 y además, interrumpen el turno cediéndole el paso a su oponente. \n \n Nótese que El Ambicioso es un juego que se desarrolla  en varias rondas hasta que uno de los jugadores supere el puntaje meta convenido (100, 200,…500). \n Los jugadores van alternándose, pidiendo cartas en su turno de modo de ir acumulando puntos y pueden decidir decir: “NO_MAS” y quedarse con el puntaje que tienen hasta ese instante, sin desear correr el riesgo que salga una Carta de Corte (J, Q, R). Al momento de decir, “NO_MAS” el puntaje acumulado en el turno va a su Cuenta de Banco, cediéndole el paso para que juegue el oponente. "</string>
+    <string name="instruccionesC">"El objetivo del  juego de El Ambicioso es lograr una puntuación lo más alta posible en cada mano. Esto es posible lograrse sin que aparezca una Carta de Corte y midiendo según su carácter de riesgo. Por tanto, cada jugador va desarrollando una estrategia según el juego de conseguir una puntuación que vaya aumentando su puntaje global  para sobrepasar el Puntaje Meta, antes que su oponente. \n Por ejemplo, un apostador saca un 10 y un 8 y por esa razón su puntuación hasta ahí es 18 y puede decidir “NO_MAS”  y sumar la cifra a su puntaje global.  Así mismo, a veces se abre una Jota, de modo que suma cero y hasta ahí llega su turno. \n \n En términos más sencillos, el objetivo principal del juego de El Ambicioso es conseguir juntar en su puntuación total,- antes que su adversario -, al menos un punto más que el Puntaje Meta establecido. \n \n <b>Apuestas</b> \n \n Para poder jugar El Ambicioso, los apostadores deben hacer una apuesta sea de puntaje o de dinero. En términos de ganancias, un juego ganador de El Ambicioso recibirá su galardón o el monto acordado, cuando supere la meta convenida. \n \n <b>Modo de juego</b> \n \n Para comenzar a jugar, los apostadores deben descargar la aplicación en su móvil e ingresar sus datos (El alias que utilizar, dado que su número de celular será capturado a momento de instalar al aplicación), una vez que alguno de ellos realice una invitación a otro jugador registrado, ambos apostadores recibirán un Ticket, que sólo se deben ingresar respectivamente en sus teléfonos y en forma aleatoria uno de ellos podrá comenzar a solicitar carta. \n"</string>
+    <string name="instruccionesD">"<b>Mesa de El Ambicioso</b> \n \n El juego de El Ambicioso empieza, con un tablero que contiene varias pantallas que se pueden visualizar deslizándola vista. La primera vista y principal mostrará un Área donde va la carta que saca desde el Mazo de Naipe muy bien barajado de 104 cartas y dos botones. "</string>
+    <string name="instruccionesE">"Al presionar el botón +Carta, se extrae aleatoriamente una carta y aparece se visualiza."</string>
+
+    <!-- SOCKET MESSAGES -->
+    <string name="action_leave">Leave</string>
+    <string name="action_send">Send</string>
+    <string name="prompt_message">Message</string>
+
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Please check your internet connection</string>
+    <string name="error_connect">Failed to connect</string>
+
+    <!-- messages -->
+    <string name="message_welcome">Welcome to Socket.IO Chat –</string>
+    <plurals name="message_participants">
+        <item quantity="one">there\'s %d participant</item>
+        <item quantity="other">there are %d participants</item>
+    </plurals>
+    <string name="message_user_joined">%s joined</string>
+    <string name="message_user_left">%s left</string>
+    <string name="user_action_typing">is typing</string>
+</resources>

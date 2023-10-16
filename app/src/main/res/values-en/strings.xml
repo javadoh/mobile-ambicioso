@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">AmbiciosoDocIRS</string>
+    <string name="action_settings">Configuracion</string>
+    <!-- TOOLBAR DIALOGS-->
+    <string name="menuFaqTitle">INSTRUCCIONES DEL JUEGO</string>
+    <string name="menuLogInOutTitle">SESIÓN DE FACEBOOK</string>
+    <string name="aliasBoxTitle">COMO TE CONOCERAN?</string>
+    <string name="aliasChangeBoxTitle">CAMBIAR EL ALIAS REGISTRADO</string>
+    <string name="tokenBoxTitle">TOKEN COMPARTIDO</string>
+    <string name="titleDialogValidateTokenPlay">JUEGA CON UN AMIGO</string>
+    <string name="btnStrSendTokenForPlay">ENVIAR TOKEN</string>
+    <string name="btnStrGotTokenForPlay">INGRESAR TOKEN</string>
+    <!-- MAIN ACTIVITY -->
+    <string name="btnTextSinglePlayer">UN JUGADOR</string>
+    <string name="btnTextMultiPlayer">MULTIPLAYER</string>
+    <string name="btnTextFacebookSignIn">INVITAR AMIGO</string>
+    <string name="aliasInputLabel">Ingresa un alias de jugador...</string>
+    <string name="tokenInputLabel">Ingresa el token compartido para juegar...</string>
+    <!-- BOTONES -->
+    <string name="btnOk">OK</string>
+    <string name="btnCancel">Cancelar</string>
+    <!-- FACEBOOK -->
+    <string name="facebook_app_id">1669503126628510</string>
+    <string name="action_login_facebook">Log In</string>
+    <string name="action_logout_facebook">Log Out</string>
+    <string name="facebookSignInSucceed">Se inicio correctamente la sesion.</string>
+    <string name="facebookDataRecovered">Recuperamos la data de facebook sin que iniciaras sesion nuevamente... Por favor abre nuevamente los comentarios.</string>
+    <string name="facebookRecoverDataSingle">Recuperando los datos...</string>
+
+
+    <string name="menuShareInviteTitle">Compartir o Invitar</string>
+    <!--DATA API-->
+    <string name="noCity">-</string>
+    <string name="noCountry">Internacional</string>
+    <string name="noUserName">sinnombre</string>
+    <string name="noBirthday">Sin fecha de cumpleanos</string>
+    <string name="noGender">Indefinido</string>
+    <string name="noEmail">sincorreo</string>
+    <!-- FACEBOOK ERRORES -->
+    <string name="facebookGralError">Ocurrio un error al recuperar los datos de facebook. Te pedimos disculpas, se verificara lo ocurrido.</string>
+    <string name="facebookCommentError">Ocurrió un error al enviar el comentario. Te pedimos disculpas, se verificara lo ocurrido.</string>
+    <string name="facebookCancelSession">Se ha cancelado el inicio de sesion de facebook.</string>
+    <string name="facebookErrorSession">Lo sentimos, ha ocurrido un error al iniciar sesion de facebook.</string>
+    <!-- ADMOB -->
+    <string name="adbanner">ca-app-pub-6017267251437976/9929367249</string>
+    <string name="adintersticial">ca-app-pub-6017267251437976/3882833649</string>
+    <!--ERRORES-->
+    <string name="errorHomeCheck">Hola!, debes aceptar los términos y condiciones para continuar con la busqueda...</string>
+    <string name="errorSinResultados">NO SE ENCOTRARON RESULTADOS EN LA BUSQUEDA</string>
+    <string name="errorSinConexion">NO FUE POSIBLE CONECTARNOS AL SERVIDOR, POR FAVOR INTENTALO MAS TARDE.</string>
+    <string name="errorGral">Ocurrio un error: </string>
+    <string name="errorGral2">Ha ocurrido un error!, lo sentimos.</string>
+    <string name="errorNoInternet">No es posible continuar sin conexión a internet.</string>
+    <string name="errorInputSearchChars">Carácteres invalidos, por favor ingresa solo letras o números.</string>
+    <!-- COMPARTIR TOKEN CON AMIGO -->
+    <string name="shareTitle">Ambicioso DocIrs</string>
+    <string name="shareContentGameText">" te invita a jugar Ambicioso!, ingresa "</string>
+    <string name="shareContentPlayText">" te invita a jugar Ambicioso!, ingresa en la opcion del menu (estrella) este token "</string>
+    <string name="shareContentText2">" para jugar el duelo. Descarga la aplicacion desde el siguiente link: https://play.google.com/store/apps/details?id=com.javadoh.plantasmedicinalesnaturales "</string>
+    <!-- REGLAS INSTRUCCIONES -->
+    <string name="instruccionesA">"<b>The Ambitious </b> \n <b>Card Game DocIRS© 2016Apps Mobil </b> \n <b>27/11/2016</b> \n \n The Ambitious remains one of the most simple card games. It is a home game-playing environment, easy to learn and play. Nevertheless contains all the exciting ingredients because every player must have a good memory and calculate the risk to accumulate the score to win. \n \n The rules are simple, the play is thrilling, and there is opportunity for high strategy. In fact, for the expert player who mathematically plays a perfect game and is able to count cards, the odds are sometimes in that player is favor to win. \n \n Indeed, the game is played width two set of  standard playing deck cards. (52 cover Blue + 52 cover Red). Two o more players may play the Ambitious ©DocIRS 2016. \n \n They are two opponents who take turns to draw cards. Each opponent takes turns to draw either an unity from the desk of cards. You win if you get the goal score plus one. \n \n Thus, The Ambitious is a card game where two players play, with two set of cards well shuffled, and with a goal score previously agreed. The objective of the game is to achieve a score that exceeds the target score. \n \n The number of card is 104, give that the English deck is a set of cards, formed by 52 units divided into four suits. ( , , . )  , using a blue and a  red  set of cards. \n Set ={1,2,3,4,5,6,7,8,9,10,J,Q.R} \n \n <b>Example</b> \n The game has two buttons to decide, one is to request a card and the other is to stop and send the score to the bank account."</string>
+    <string name="instruccionesB">"To collect points in each round, only the requested cards from 1 to 10 are valid, the other J, Q and K interrupt the round, leaving the accumulated score in the round to zero. \n \n In other words, if during his round appears one court card (Jack, Queen, King), then this player loses the accumulated points in the round and continues his opponent. \n \n Once opened the letter decides if he wants to request one more card or he stops sending the score obtained to the bank (As long as a Court Card does not come out)."</string>
+    <string name="instruccionesC">"The example of the figure, the player Cristian has two cards requested, pressing the + Card button, and has accumulated 16 points on the turn. If you press the No More button, you will add 16 points and enter them into your Bank Account. In case of following, requesting letters can perhaps continue adding points or can also leave a Jack and get zero points in the round. \n \n The goal is to beat your opponent exceeding 100 points (or the agreed target score) by scoring in every hand or round by melding cards and combinations whose sum is different from zero and add points in each round. \n \n The basic premise of the game is that you want to have a hand value that is to add maximum of points taking risk looking the score of other dealer. Always the risk is appear a Court Card. "</string>
+    <string name="instruccionesD"></string>
+    <string name="instruccionesE"></string>
+
+    <!-- SOCKET MESSAGES -->
+    <string name="action_leave">Leave</string>
+    <string name="action_send">Send</string>
+    <string name="prompt_message">Message</string>
+
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Please check your internet connection</string>
+    <string name="error_connect">Failed to connect</string>
+
+    <!-- messages -->
+    <string name="message_welcome">Welcome to Socket.IO Chat –</string>
+    <plurals name="message_participants">
+        <item quantity="one">there\'s %d participant</item>
+        <item quantity="other">there are %d participants</item>
+    </plurals>
+    <string name="message_user_joined">%s joined</string>
+    <string name="message_user_left">%s left</string>
+    <string name="user_action_typing">is typing</string>
+</resources>

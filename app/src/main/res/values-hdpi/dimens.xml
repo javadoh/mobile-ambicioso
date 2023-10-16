@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- ALIAS AVATAR INPUT -->
+    <dimen name="avatarAliasChosseWidth">55dp</dimen>
+    <dimen name="avatarAliasChosseHeight">60dp</dimen>
+    <!-- GAME VIEWS -->
+    <!-- LAYOUT HISTORIC CARDS -->
+    <dimen name="historicCardsLayoutHeight">40dp</dimen>
+    <dimen name="historicCardsLayoutMargin">15dp</dimen>
+    <!-- GENERAL -->
+    <dimen name="marginTextTop">6dp</dimen>
+    <dimen name="paddingBackBlackTable">3dp</dimen>
+    <!-- AVATAR IMAGES-->
+    <dimen name="imgavatar_width">100dp</dimen>
+    <dimen name="imgavatar_height">60dp</dimen>
+    <!-- TEXT SIZES -->
+    <!-- COL 1 -->
+    <dimen name="labelTitleTurn">12dp</dimen>
+    <dimen name="titleTurn">14dp</dimen>
+    <dimen name="labelPointsTurn">12dp</dimen>
+    <dimen name="pointsTurn">14dp</dimen>
+    <dimen name="labelCardsTurn">12dp</dimen>
+    <dimen name="cardsTurn">14dp</dimen>
+    <!-- COL 2 -->
+    <dimen name="cardShownWidth">80dp</dimen>
+    <dimen name="cardShownHeight">160dp</dimen>
+    <dimen name="cornerBackCardRadius">6dp</dimen>
+    <dimen name="backCardPaddingImg">1.5dp</dimen>
+    <dimen name="marginCardTop">10dp</dimen>
+    <!-- COL 3 -->
+    <dimen name="labelMetaGame">12dp</dimen>
+    <dimen name="metaGame">14dp</dimen>
+    <dimen name="labelPointsRemoteTurn">12dp</dimen>
+    <dimen name="pointsRemoteTurn">14dp</dimen>
+    <dimen name="labelCardsRemoteTurn">12dp</dimen>
+    <dimen name="cardsRemoteTurn">14dp</dimen>
+    <!-- BUTTONS -->
+    <dimen name="btnCallCardWidth">80dp</dimen>
+    <dimen name="btnCallCardHeight">40dp</dimen>
+    <dimen name="btnEndTurnWidth">80dp</dimen>
+    <dimen name="btnEndTurnHeight">40dp</dimen>
+    <dimen name="btnTextSize">14dp</dimen>
+
+    <dimen name="marginBtnTop">4dp</dimen>
+    <dimen name="marginBtnBottom">4dp</dimen>
+</resources>

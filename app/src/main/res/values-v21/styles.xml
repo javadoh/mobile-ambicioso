@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDocIrs</item>
+        <item name="colorPrimary">@color/colorPrimaryDocIrs</item>
+        <item name="colorAccent">@color/colorPrimaryTextDocIrs</item>
+    </style>
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimaryTextDocIrs</item>
+        <item name="android:textColorHint">@color/colorSecondaryTextDocIrs</item>
+        <item name="colorControlActivated">@color/colorSecondaryTextDocIrs</item>
+        <item name="colorControlHighlight">@color/htmlLinks</item>
+        <item name="colorControlNormal">@color/colorPrimaryTextDocIrs</item>
+    </style>
+    <color name="colorPrimaryDocIrs">#f00000</color>
+    <color name="colorPrimaryDarkDocIrs">#8b0000</color>
+    <color name="colorPrimaryTextDocIrs">#000000</color>
+    <color name="colorWhiteTextDocIrs">#FFFFFF</color>
+    <color name="colorSecondaryTextDocIrs">#2600ce</color>
+    <color name="htmlLinks">#14cae4</color>
+    <color name="checkedboxTermsHome">#14cae4</color>
+    <color name="uncheckedboxTermsHome">#b3b3b3</color>
+    <color name="textError">#f00000</color>
+    <color name="colorYellow">#ffe700</color>
+    <color name="colorGreenTable">#637335</color>
+    <color name="colorBrownTable">#542a00</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_vertical|center_horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.docirs.ambicioso.ui.activities.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/background"
+    >
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/colorWhiteTextDocIrs"
+        android:id="@+id/btn_single_player"
+        android:onClick="btnSinglePlayerClicked"
+        android:text="@string/btnTextSinglePlayer"
+        android:textColor="@color/colorPrimaryTextDocIrs"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/colorWhiteTextDocIrs"
+        android:id="@+id/btn_multi_player"
+        android:onClick="btnMultiPlayerClicked"
+        android:text="@string/btnTextMultiPlayer"
+        android:textColor="@color/colorPrimaryTextDocIrs"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/btn_single_player"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/colorWhiteTextDocIrs"
+        android:id="@+id/btn_share_invite"
+        android:onClick="btnFacebookLoginClicked"
+        android:text="@string/btnTextFacebookSignIn"
+        android:textColor="@color/colorPrimaryTextDocIrs"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/btn_multi_player"/>
+
+</RelativeLayout>

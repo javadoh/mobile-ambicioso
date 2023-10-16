@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/colorWhiteTextDocIrs"
+    >
+    <TextView
+        android:id="@+id/idTitleDialogValTokenPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleDialogValidateTokenPlay"
+        android:textColor="@color/colorPrimaryDarkDocIrs"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@color/colorYellow"
+            android:id="@+id/btnSendTokenForPlay"
+            android:text="@string/btnStrSendTokenForPlay"
+            android:textColor="@color/colorPrimaryTextDocIrs"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@color/colorYellow"
+            android:id="@+id/btnGotTokenForPlay"
+            android:text="@string/btnStrGotTokenForPlay"
+            android:textColor="@color/colorPrimaryTextDocIrs"
+            android:textStyle="bold"
+            android:layout_below="@+id/btn_single_player"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutTxtInputTokenForPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTokenForPlay"
+            android:gravity="center"
+            android:hint="@string/tokenInputLabel"
+            android:shadowColor = "#000000"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="4.3"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textColorHighlight="#eeeeee"
+            android:textColorLink="@color/colorPrimaryTextDocIrs"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="text"
+            android:visibility="invisible"
+            />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

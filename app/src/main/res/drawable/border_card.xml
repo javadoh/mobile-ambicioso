@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#000000" />
+    <padding android:left="@dimen/backCardPaddingImg"
+        android:top="@dimen/backCardPaddingImg"
+        android:right="@dimen/backCardPaddingImg"
+        android:bottom="@dimen/backCardPaddingImg" />
+    <corners android:radius="@dimen/cornerBackCardRadius" />
+    <stroke android:width="2dp" android:color="#000000" />
+</shape>

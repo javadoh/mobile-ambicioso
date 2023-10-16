@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ui.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_alias_change"
+        android:orderInCategory="100"
+        android:title="@string/aliasChangeBoxTitle"
+        android:icon="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/action_share_invite"
+        android:orderInCategory="200"
+        android:title="@string/menuShareInviteTitle"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/action_faq"
+        android:orderInCategory="300"
+        android:icon="@drawable/question"
+        android:title="@string/menuFaqTitle"
+        app:showAsAction="always" />
+</menu>

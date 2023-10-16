@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/aliasDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aliasBoxTitle"
+        android:textColor="@color/colorPrimaryDarkDocIrs"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutTextInputAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlias"
+            android:gravity="center"
+            android:hint="@string/aliasInputLabel"
+            android:shadowColor = "@color/colorPrimaryDarkDocIrs"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="4.3"
+            android:textColorHint="@color/colorPrimaryDarkDocIrs"
+            android:textColor="@color/colorPrimaryDarkDocIrs"
+            android:textColorHighlight="#eeeeee"
+            android:textColorLink="@color/colorSecondaryTextDocIrs"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="text"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary_dark_material_light">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECCIONA TU AVATAR"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhiteTextDocIrs"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:background="@color/primary_dark_material_light"
+        >
+
+        <ImageView
+            android:id="@+id/mas_avatar1"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/mas_avatar1"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/fem_avatar1"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/fem_avatar1"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/mas_avatar2"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/mas_avatar2"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/fem_avatar2"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/fem_avatar2"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/mas_avatar3"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/mas_avatar3"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/fem_avatar3"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/fem_avatar3"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/mas_avatar4"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/mas_avatar4"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/fem_avatar4"
+            android:layout_width="@dimen/avatarAliasChosseWidth"
+            android:layout_height="@dimen/avatarAliasChosseHeight"
+            android:src="@drawable/fem_avatar4"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+        </HorizontalScrollView>
+        </LinearLayout>
+</LinearLayout>

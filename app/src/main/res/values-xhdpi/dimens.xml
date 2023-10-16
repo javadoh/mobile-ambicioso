@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- ALIAS AVATAR INPUT -->
+    <dimen name="avatarAliasChosseWidth">75dp</dimen>
+    <dimen name="avatarAliasChosseHeight">80dp</dimen>
+    <!-- GAME VIEWS -->
+    <!-- LAYOUT HISTORIC CARDS -->
+    <dimen name="historicCardsLayoutHeight">50dp</dimen>
+    <dimen name="historicCardsLayoutMargin">20dp</dimen>
+    <!-- GENERAL -->
+    <dimen name="marginTextTop">10dp</dimen>
+    <dimen name="paddingBackBlackTable">4dp</dimen>
+    <!-- AVATAR IMAGES-->
+    <dimen name="imgavatar_width">120dp</dimen>
+    <dimen name="imgavatar_height">80dp</dimen>
+    <!-- TEXT SIZES -->
+    <!-- COL 1 -->
+    <dimen name="labelTitleTurn">14dp</dimen>
+    <dimen name="titleTurn">18dp</dimen>
+    <dimen name="labelPointsTurn">18dp</dimen>
+    <dimen name="pointsTurn">18dp</dimen>
+    <dimen name="labelCardsTurn">18dp</dimen>
+    <dimen name="cardsTurn">18dp</dimen>
+    <!-- COL 2 -->
+    <dimen name="cardShownWidth">120dp</dimen>
+    <dimen name="cardShownHeight">240dp</dimen>
+    <dimen name="cornerBackCardRadius">12dp</dimen>
+    <dimen name="backCardPaddingImg">3dp</dimen>
+    <dimen name="marginCardTop">20dp</dimen>
+    <!-- COL 3 -->
+    <dimen name="labelMetaGame">14dp</dimen>
+    <dimen name="metaGame">18dp</dimen>
+    <dimen name="labelPointsRemoteTurn">18dp</dimen>
+    <dimen name="pointsRemoteTurn">18dp</dimen>
+    <dimen name="labelCardsRemoteTurn">18dp</dimen>
+    <dimen name="cardsRemoteTurn">18dp</dimen>
+    <!-- BUTTONS -->
+    <dimen name="btnCallCardWidth">140dp</dimen>
+    <dimen name="btnCallCardHeight">40dp</dimen>
+    <dimen name="btnEndTurnWidth">140dp</dimen>
+    <dimen name="btnEndTurnHeight">40dp</dimen>
+    <dimen name="btnTextSize">18dp</dimen>
+
+    <dimen name="marginBtnTop">5dp</dimen>
+    <dimen name="marginBtnBottom">5dp</dimen>
+</resources>

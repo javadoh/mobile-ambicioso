@@ -1,0 +1,368 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.GameActivity"
+    android:background="@drawable/background"
+    >
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <!-- CARTAS HISTORICAS -->
+    <LinearLayout
+        android:id="@+id/idLinearHistoricCards"
+        android:layout_marginTop="@dimen/historicCardsLayoutMargin"
+        android:layout_marginLeft="@dimen/historicCardsLayoutMargin"
+        android:layout_marginRight="@dimen/historicCardsLayoutMargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/historicCardsLayoutHeight"
+        android:background="@color/colorWhiteTextDocIrs"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/idLinearHistoricCards">
+    <!-- LINEA AUXILIAR PARA EL BORDE DE LA TABLA VERDE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/colorBrownTable"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="@dimen/paddingBackBlackTable">
+
+        <!-- LINEA PRINCIPAL DEL TABLERO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="@drawable/background_greentable"
+            android:padding="5dp">
+            <!-- ############################ INICIO COLUMNA 1 ################################# -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5"
+                android:layout_marginTop="@dimen/marginTextTop"
+                android:gravity="center">
+                <!-- QUIEN JUEGA NOMBRE -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/labelTitleTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turno: "
+                        android:textStyle="bold"
+                        android:textSize="@dimen/labelTitleTurn"
+                        android:textColor="@color/colorWhiteTextDocIrs" />
+
+                    <TextView
+                        android:id="@+id/titleTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_txt_background"
+                        android:textSize="@dimen/titleTurn"
+                        android:padding="4dp"
+                        android:textColor="@color/colorPrimaryTextDocIrs"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgAvatarOne"
+                    android:layout_width="@dimen/imgavatar_width"
+                    android:layout_height="@dimen/imgavatar_height"
+                    android:layout_marginTop="@dimen/marginTextTop"
+                    />
+                <!-- CUANTOS PUNTOS TIENE -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/marginTextTop">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/labelPointsPlayerOneTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Puntos turno: "
+                        android:textSize="@dimen/labelPointsTurn"
+                        android:textColor="@color/colorWhiteTextDocIrs"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pointsPlayerOneTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_txt_background"
+                        android:textSize="@dimen/pointsTurn"
+                        android:textColor="@color/colorPrimaryTextDocIrs"
+                        android:padding="4dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!-- CUANTAS CARTAS A PEDIDO ESTE TURNO -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/marginTextTop">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/labelCardsPlayerOneTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cartas Turno: "
+                        android:textSize="@dimen/labelCardsTurn"
+                        android:textColor="@color/colorWhiteTextDocIrs"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardsPlayerOneTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_txt_background"
+                        android:textSize="@dimen/cardsTurn"
+                        android:textColor="@color/colorPrimaryTextDocIrs"
+                        android:padding="4dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- COLUMNA 1.5 PUNTOS TOTALES JUGADOR UNO -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTotalPointsPlayerOne"
+                    android:background="@drawable/border_card"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorWhiteTextDocIrs"/>
+            </LinearLayout>
+            <!-- ######################## INCIO COLUMNA 2 ############################## -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marginCardTop"
+                android:layout_marginBottom="@dimen/marginCardTop"
+                android:gravity="center">
+
+                <!--<TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/labelCardTurnShowed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Última Carta"
+                    android:textSize="22dp"
+                    android:textColor="@color/colorWhiteTextDocIrs"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"/>-->
+
+                <ImageView
+                    android:id="@+id/cardShown"
+                    android:layout_width="@dimen/cardShownWidth"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/corazon"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_card"
+                    />
+            </LinearLayout>
+            <!-- ############################### INICIO COLUMNA 3 ################################### -->
+
+            <!-- COLUMNA 3.5 PUNTOS TOTALES JUGADOR UNO -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTotalPointsPlayerTwo"
+                    android:background="@drawable/border_card"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorWhiteTextDocIrs"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marginTextTop"
+                android:layout_marginRight="0dp"
+                android:weightSum="4"
+                android:gravity="center">
+                <!-- META DEL JUEGO INFO -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/idMetaGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meta: "
+                        android:textStyle="bold"
+                        android:textSize="@dimen/labelMetaGame"
+                        android:textColor="@color/colorWhiteTextDocIrs" />
+
+                    <TextView
+                        android:id="@+id/metaGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_txt_background"
+                        android:textColor="@color/colorPrimaryDarkDocIrs"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:textSize="@dimen/metaGame"
+                        android:text="100 PUNTOS" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgAvatarTwo"
+                    android:layout_width="@dimen/imgavatar_width"
+                    android:layout_height="@dimen/imgavatar_height"
+                    android:layout_marginTop="@dimen/marginTextTop"
+                    android:layout_weight="1"/>
+                <!-- CUANTOS PUNTOS TIENE -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/marginTextTop">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/labelPointsRemoteTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Puntos turno: "
+                        android:textSize="@dimen/labelPointsRemoteTurn"
+                        android:textColor="@color/colorWhiteTextDocIrs"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pointsRemoteTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_txt_background"
+                        android:textSize="@dimen/pointsRemoteTurn"
+                        android:textColor="@color/colorPrimaryTextDocIrs"
+                        android:padding="4dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!-- CUANTAS CARTAS A PEDIDO ESTE TURNO -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/marginTextTop">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/labelCardsRemoteTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cartas Turno: "
+                        android:textSize="@dimen/labelCardsRemoteTurn"
+                        android:textColor="@color/colorWhiteTextDocIrs"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardsRemoteTurn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_txt_background"
+                        android:textSize="@dimen/cardsRemoteTurn"
+                        android:textColor="@color/colorPrimaryTextDocIrs"
+                        android:padding="4dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- col 3 end -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginBtnTop"
+        android:layout_marginBottom="@dimen/marginBtnBottom">
+
+        <Button
+            android:layout_width="@dimen/btnCallCardWidth"
+            android:layout_height="@dimen/btnCallCardHeight"
+            android:background="@color/colorWhiteTextDocIrs"
+            android:id="@+id/btn_call_card"
+            android:onClick="btnCallCard"
+            android:text="+ Cartas"
+            android:textSize="@dimen/btnTextSize"
+            android:textColor="@color/colorPrimaryTextDocIrs"
+            android:textStyle="italic"
+            android:layout_marginRight="20dp"
+
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="@dimen/btnCallCardWidth"
+            android:layout_height="@dimen/btnCallCardHeight"
+            android:background="@color/colorWhiteTextDocIrs"
+            android:id="@+id/btn_call_end_turn"
+            android:onClick="btnCallEndTurn"
+            android:text="No Más"
+            android:textSize="@dimen/btnTextSize"
+            android:textColor="@color/colorPrimaryTextDocIrs"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<com.google.android.gms.ads.AdView
+        android:id="@+id/adBannerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adbanner"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false">
+    </com.google.android.gms.ads.AdView>-->
+
+</RelativeLayout>
